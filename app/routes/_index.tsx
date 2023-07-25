@@ -107,8 +107,9 @@ export default function FitnessBiz() {
         <div
           style={{
             width: "100%",
-            backgroundImage:
-              "linear-gradient(to bottom, var(--fitLightPurple), var(--fitDarkPurple))",
+
+            // backgroundImage:
+            //   "linear-gradient(to bottom, var(--fitLightPurple), var(--fitDarkPurple))",
           }}
         >
           <FlexContainer

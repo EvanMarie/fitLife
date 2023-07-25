@@ -224,73 +224,81 @@ const socialMedia = {
 
 export function Footer() {
   return (
-    <div
-      className="footer"
-      style={{
-        marginTop: "10px",
-      }}
-    >
+    <>
       <Break height="30px" />
-      <FlexContainer direction="row" padding="5px 10px" justify="space-evenly">
-        <Collapsible spacing="30px" align="flex-start">
-          <FlexContainer direction="column" className="footerSection">
-            <VerticalStack spacing="5px">
-              <h3 className="caveat" style={{ fontSize: "3rem" }}>
-                Social Media
-              </h3>
-              <HorizontalStack>
-                <p>
-                  <a
-                    href={socialMedia.facebook}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <BsFacebook size={30} />
-                  </a>
-                </p>
-                <p>
-                  <a
-                    href={socialMedia.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <BsTwitter size={30} />
-                  </a>
-                </p>
-                <p>
-                  <a
-                    href={socialMedia.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <BsInstagram size={30} />
-                  </a>
-                </p>
-                <p>
-                  <a
-                    href={socialMedia.youtube}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <BsYoutube size={30} />
-                  </a>
-                </p>
-              </HorizontalStack>
-            </VerticalStack>
-          </FlexContainer>
-          <FlexContainer className="footerSection">
-            <VerticalStack spacing="5px">
-              <h3 className="caveat" style={{ fontSize: "3rem" }}>
-                Contact Us
-              </h3>
-              <p>{contact.address}</p>
-              <p>{contact.phone}</p>
-              <p>{contact.email}</p>
-              <p>{contact.website}</p>
-            </VerticalStack>
-          </FlexContainer>
-        </Collapsible>
-      </FlexContainer>
-    </div>
+      <div
+        className="footer"
+        style={{
+          marginTop: "10px",
+          borderTop: "2px solid var(--fitSilverTransparent)",
+        }}
+      >
+        <Break />
+        <FlexContainer
+          direction="row"
+          padding="5px 10px"
+          justify="space-evenly"
+        >
+          <Collapsible spacing="30px" align="flex-start">
+            <FlexContainer direction="column" className="footerSection">
+              <VerticalStack spacing="5px">
+                <h3 className="caveat" style={{ fontSize: "3rem" }}>
+                  Social Media
+                </h3>
+                <HorizontalStack>
+                  <p>
+                    <a
+                      href={socialMedia.facebook}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <BsFacebook size={30} />
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      href={socialMedia.twitter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <BsTwitter size={30} />
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      href={socialMedia.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <BsInstagram size={30} />
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      href={socialMedia.youtube}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <BsYoutube size={30} />
+                    </a>
+                  </p>
+                </HorizontalStack>
+              </VerticalStack>
+            </FlexContainer>
+            <FlexContainer className="footerSection">
+              <VerticalStack spacing="5px">
+                <h3 className="caveat" style={{ fontSize: "3rem" }}>
+                  Contact Us
+                </h3>
+                <p>{contact.address}</p>
+                <p>{contact.phone}</p>
+                <p>{contact.email}</p>
+                <p>{contact.website}</p>
+              </VerticalStack>
+            </FlexContainer>
+          </Collapsible>
+        </FlexContainer>
+      </div>
+    </>
   );
 }
