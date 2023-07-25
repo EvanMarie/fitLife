@@ -1,0 +1,420 @@
+
+:root {
+
+    /* Break Points */
+    --smallBreakPoint: 500px;
+    --mediumBreakPoint: 800px;
+    --largeBreakPoint: 1100px;
+    
+
+    /* Background Colors */
+    --darkGray: #20232e;
+    --darkGrayTransparent: rgba(32, 35, 46, 0.8);
+    --medGray: #323747;
+    --medGrayTransparent: rgba(50, 55, 71, 0.7);
+    --medLightGray: #4b5373;
+    --lightGray: #8d97b8;
+    --lighterGray: #a9b2cf;
+    --lightBlue: #b0c0f5;
+    --medTeal: #108491;
+    --medTealTransparent: rgba(16, 132, 145, 0.7);
+
+    /* Text Color */
+    --creme: #FDF4E7;
+
+    /* Accent Colors */
+    --pink: #FF98FF;
+    --pinkTransparent: rgba(255, 152, 255, 0.5);
+    --blue: #00FFFF;
+    --blueTransparent: rgba(70, 236, 255, 0.3);
+    --green: #81FFA7;
+    --greenTransparent: rgba(129, 255, 167, 0.5);
+    --yellow: #FFE874;
+    --yellowTransparent: rgba(255, 232, 116, 0.5);
+    --orange: #FFA565;
+    --orangeTransparent: rgba(255, 165, 101, 0.5);
+
+    /* SPECIFICS */
+    --navMenuColor: rgba(255, 152, 255, 0.85);
+    --badgeBorderRadius: 10px;
+
+
+    /* Font Sizes */
+    --extraSmall: 1.2rem;
+    --small: 1.4rem;
+    --medium: 1.75rem;
+    --large: 2rem;
+    --xlarge: 2.5rem;
+    --xxlarge: 3rem;
+    --xxxlarge: 3.5rem;
+
+    /* Padding */
+    --extraSmallPadding: 0.5rem;
+    --smallPadding: 1rem;
+    --mediumPadding: 2rem;
+    --largePadding: 3rem;
+    --xlargePadding: 4rem;
+    --xxlargePadding: 6rem;
+
+    /* Font Weights */
+    --light: 300;
+    --normal: 400;
+    --semiBold: 500;
+    --bold: 700;
+
+    /* Font Family */
+    --sansSerif: 'Ubuntu', sans-serif;
+    --serif: Georgia, "Times New Roman", Times, serif;
+    /* --monospace: 'Ubuntu Mono', monospace; */
+    --monospace: 'Share Tech Mono', monospace;
+
+
+    /* Spacing */
+    --extraSmallSpacing: 0.5rem;
+    --smallSpacing: 1rem;
+    --mediumSpacing: 2rem;
+    --largeSpacing: 3rem;
+    --xlargeSpacing: 4rem;
+    --xxlargeSpacing: 6rem;
+    --xxxlargeSpacing: 8rem;
+
+    /* Border Radius */
+    --smallRadius: 3px;
+    --mediumRadius: 7px;
+    --largeRadius: 15px;
+    --xlargeRadius: 23px;
+    --xxlargeRadius: 44px;
+    --xxxlargeRadius: 99px;
+    --full: "50%"
+
+    /* Shadows */
+    --smallShadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, .24);
+    --smallShadowBlack: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, .24);
+    --mediumShadowBlack: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, .24);
+    --largeShadowBlack: 0 10px 20px rgba(0, 0, 0, 0.12), 0 6px 6px rgba(0, 0, 0, .24);
+    --xlargeShadowBlack: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, .24);
+    --xxlargeShadowBlack: 0 19px 38px rgba(0, 0, 0, 0.12), 0 15px 12px rgba(0, 0, 0, .24);
+    --xxxlargeShadowBlack: 0 24px 48px rgba(0, 0, 0, 0.12), 0 20px 15px rgba(0, 0, 0, .24);
+    --smallShadowWhite: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, .24);
+    --mediumShadowWhite: 0 3px 6px rgba(255, 255, 255, 0.12), 0 3px 6px rgba(255, 255, 255, .24);
+    --largeShadowWhite: 0 10px 20px rgba(255, 255, 255, 0.12), 0 6px 6px rgba(255, 255, 255, .24);
+    --xlargeShadowWhite: 0 14px 28px rgba(255, 255, 255, 0.12), 0 10px 10px rgba(255, 255, 255, .24);
+    --xxlargeShadowWhite: 0 19px 38px rgba(255, 255, 255, 0.12), 0 15px 12px rgba(255, 255, 255, .24);
+    --xxxlargeShadowWhite: 0 24px 48px rgba(255, 255, 255, 0.12), 0 20px 15px rgba(255, 255, 255, .24);
+
+
+    /* Transitions */
+    --defaultTransition: all 0.3s ease-in-out;
+    --linkTransition: all 0.5s ease-in-out;
+    --medTransition: all 0.5s ease-in-out;
+    --slowTransition: all 0.7s ease-in-out;
+    --defaultTransitionDelay: all 0.3s ease-in-out 0.3s;
+    --defaultTransitionFast: all 0.1s ease-in-out;
+    --defaultTransitionFastDelay: all 0.1s ease-in-out 0.1s;
+
+    /* Transform */
+    --defaultTransform: scale(1.1);
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 75%;
+    /* To be able to work with rem */
+}
+
+body {
+    font-size: 1.2rem;
+    /* 16px */
+    padding: 0.25rem;
+    background-color: var(--darkGrayTransparent);
+    line-height: 1.25;
+    font-weight: var(--light);
+    font-family:  'Ubuntu', sans-serif;
+    color: var(--creme);
+    overflow-x: hidden;
+    
+}
+
+h1 {
+    font-size: var(--xlarge);
+}
+
+h2 {
+    font-size: var(--large);
+}
+
+ul {
+    list-style-type: circle;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: var(--bold);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.animate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+    font-size: 1.6rem;
+    border: none;
+    background: var(--blue);
+    color: var(--darkGray);
+    font-weight: var(--bold);
+    border-radius: 5px;
+    border: 2px solid var(--darkGray);
+    margin: var(--smallSpacing) 0px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: var(--lightGray);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
+.bigContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: var(--smallSpacing);
+}
+
+.headingContainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: var(--extraSmallPadding);
+    background-color: var(--medGray);
+    border-radius: var(--smallRadius);
+    margin: 0px 0px var(--extraSmallPadding) 0px;
+    color: var(--blue);
+    box-shadow: var(--mediumShadowBlack);
+}
+
+.contentContainer {
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: var(--extraSmallPadding);
+    margin: 0px 0px var(--extraSmallSpacing) 0px;
+    background-color: var(--medTeal);
+    border-radius: var(--smallRadius);
+    box-shadow: var(--smallShadowBlack);
+}
+
+.sectionContainer{
+    width: 100%;
+    margin: 10px 0px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--darkGray);
+    padding: var(--extraSmallPadding);
+    border-radius: var(--smallRadius);
+    box-shadow: var(--smallShadowBlack);
+}
+
+.codeContainer {
+    width: 100%;
+    max-width: "400px";
+    overflow: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--darkGray);
+    padding: var(--smallPadding);
+    border-radius: var(--smallRadius);
+    box-shadow: var(--smallShadowBlack);
+    margin: var(--smallSpacing) 0px;
+}
+
+.collapsibleContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;   
+}
+
+/* ************************************ CODE ************************************ */
+
+code {
+    font-family: monospace;
+    color: var(--creme);
+    font-weight: 300;
+    line-height: 1.25;
+    font-size: 12px;
+}
+
+/* ******************************* NAVIGATION *********************************** */
+
+.navMenu {
+    width: 100%;
+    max-width: 425px;
+}
+
+.navBarMenuItem {
+    margin: 3px 0;
+    padding: 10px 10px;
+    background: none;
+    color: var(--darkGray);
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--darkGray);
+}
+.navBarMenuItem:hover {
+    background-color: var(--yellow);
+    color: var(--darkGray);
+}
+
+.inputLabel {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+
+/* ************************************ MEDIA QUERIES ************************************ */
+/* SMALL */
+@media (min-width: 500px) {
+
+    body {
+        font-size: 1.6rem;
+    }
+
+    body, .headingContainer, .contentContainer, .bigContainer, .sectionContainer {
+        padding: var(--smallPadding);
+    }
+
+    .contentContainer {
+        max-width: 600px;
+    }
+
+    .code {
+        font-size: 12px;
+    }
+
+    html {
+        font-size: 56.25%;
+    }
+
+    .codeContainer {
+        max-width: 475px;
+    }
+
+    .navMenu {
+        width: 350px;
+    }
+
+    .navBarMenuItem {
+        font-size: 2.5rem;
+    }
+
+}
+
+
+/* Medium */
+@media (min-width: 800px) {
+
+    body {
+        font-size: 1.7rem;
+    }
+
+    .collapsibleContainer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .contentContainer {
+        max-width: 700px;
+    }
+
+
+    .codeContainer {
+            max-width: 500px;
+        }
+
+    .code {
+        font-size: 15px;
+}
+
+    html {
+        font-size: 62.5%;
+    }
+    .navMenu {
+        width: 350px;
+    } 
+    .navBarMenuItem {
+        font-size: 2rem;
+    }
+}
+
+
+/* Large */
+@media (min-width: 1100px) {
+    body {
+        font-size: 1.5rem;
+    }
+    .contentContainer {
+        max-width: 900px;
+    }
+
+    .codeContainer {
+        max-width: 600px;
+}
+
+    html {
+        font-size: 70%;
+    }
+    .navMenu {
+        width: 350px;
+    }
+    .navBarMenuItem {
+        font-size: 2rem;
+    }
+}
