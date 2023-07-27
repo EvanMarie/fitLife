@@ -8,6 +8,13 @@ import {
 
 import { Break, FlexContainer } from "./designComponents";
 
+export const meta: V2_MetaFunction = () => {
+  return [
+    { title: "FitLife Studio" },
+    { name: "Fitness starts here.", content: "Welcome to Fitlife Studio!" },
+  ];
+};
+
 export default function FitnessBiz() {
   const { scrollYProgress } = useScroll();
 
