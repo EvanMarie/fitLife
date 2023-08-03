@@ -1,4 +1,4 @@
-# FitLife Studio Website
+# [FitLife Studio Website](https://iheartcomponents.com/images/design/fitLifeMain.png)
 
 Welcome to FitLife Studio, where fitness starts here! This project showcases my UI design capabilities and includes features like a parallax header image to provide a dynamic, visually appealing experience.
 
